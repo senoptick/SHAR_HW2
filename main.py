@@ -190,9 +190,9 @@ class App:
         self.inp_pos_bot = InputBox(SIZE, PIXEL, str(robot.pos[0]) + ' ' + str(robot.pos[1]), 1)
         self.inp_size_map = InputBox(SIZE, PIXEL, str(SIZE[0]), 2)
         self.inp_size_pixel = InputBox(SIZE, PIXEL, str(PIXEL), 3)
-        self.btn_move_bot = Button(SIZE, PIXEL, "Переместить робота", 1)
-        self.btn_create_csv = Button(SIZE, PIXEL, "Создать локацию |map:", 2)
-        self.btn_load_csv = Button(SIZE, PIXEL, "Загрузить локацию |pixel:", 3)
+        self.btn_move_bot = Button(SIZE, PIXEL, "Переместить робота        robot pos", 1)
+        self.btn_create_csv = Button(SIZE, PIXEL, "Создать локацию           map size:", 2)
+        self.btn_load_csv = Button(SIZE, PIXEL, "Загрузить локацию        pixel size:", 3)
 
         self.btn_show = Button(SIZE, PIXEL, "Показать/Скрыть бота", 4)
 

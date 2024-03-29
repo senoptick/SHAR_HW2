@@ -9,7 +9,7 @@ COLOR_ACTIVE = pygame.Color('dodgerblue2')
 
 class InputBox:
     def __init__(self, window_size, pixel_size, text, n):
-        self.pos = window_size[0] * pixel_size + 200, 40 * n
+        self.pos = window_size[0] * pixel_size + 230, 40 * n + 15
         self.rect = Rect(self.pos[0], self.pos[1], 80, 20)
         self.color = COLOR_INACTIVE
         self.text = text
@@ -43,7 +43,7 @@ class InputBox:
 
 class Button:
     def __init__(self, window_size, pixel_size, text, n):
-        self.pos = window_size[0] * pixel_size + 30, 40 * n
+        self.pos = window_size[0] * pixel_size + 70, 40 * n
         self.rect = Rect(self.pos[0], self.pos[1], 150, 20)
 
         font = pygame.font.Font(None, 20)
