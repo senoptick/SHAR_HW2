@@ -147,9 +147,11 @@ class Minimap:
     def __init__(self, PIXEL, SIZE):
         self.word_h = SIZE[0]
         self.word_w = SIZE[1]
-        self.robot_minimap = Robot((self.word_h/2, self.word_w*2))
 
     def draw_minimap(self):
+        self.word_h = SIZE[0]
+        self.word_w = SIZE[1]
+        self.robot_minimap = Robot((self.word_h/2, self.word_w*2))
         env, local_robot_pos = local_map()
         for x in range(env.shape[0]):
             for y in range(env.shape[1]):
